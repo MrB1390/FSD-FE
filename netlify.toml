@@ -1,0 +1,16 @@
+[build]
+  # Command to build your project
+  command = "npm run build"
+
+  # Directory with the built files
+  publish = "build"
+
+[build.environment]
+  # Environment variables you may need during the build process
+  NODE_ENV = "production"
+
+[[redirects]]
+  # Redirects all requests to /index.html (React Router's entry point)
+  from = "/*"
+  to = "/index.html"
+  status = 200
